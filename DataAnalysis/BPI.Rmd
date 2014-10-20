@@ -1,0 +1,40 @@
+Análisis Dataset BPI Valparaiso-Educación y Cultura
+========================================================
+
+Análisis de datos BPI para la región de Valparaíso:
+
+```{r, echo=FALSE}
+setwd <- "~/Dropbox/UPLA/EXTENSION/CONSULTORIAS/AIRE/aire"
+#read database BIP
+BPI<- read.delim("~/Dropbox/UPLA/EXTENSION/CONSULTORIAS/AIRE/aire/DATA-BIP/BPI utf8.txt")
+color_plots <- "skyblue1"
+```
+
+Nombre, dimensiones y tipo de variables
+```{r}
+names(BPI)
+str(BPI)
+```
+
+```{r, echo=FALSE}
+#año_postulacion <- table(BPI$Año.de.Postulación)
+
+```
+
+
+```{r, width=1200}
+ano_postulacion <- table(BPI$Ano.Postulación)
+barplot(ano_postulacion, col=color_plots, main='Cantidad de inversiones por año de postulación')
+provincia<-table(BPI$Provincia)
+barplot(provincia[order(provincia,decreasing=TRUE)], col=color_plots, main='Cantidad de inversiones por Provincia', las=2, cex.names=0.6)
+comuna <- table(BPI$Comuna)
+barplot(comuna[order(comuna, decreasing=TRUE)], col= color_plots, main='Cantidad de inversiones por Comuna', las=2, cex.names=0.6)
+fuente<- table(BPI$Fuente.Financiera)
+barplot(fuente[order(fuente,decreasing=TRUE)], col= color_plots, main='Cantidad de inversiones por Comuna',las=2, cex.names=0.5)
+
+```
+
+
+
+
+
