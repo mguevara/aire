@@ -8,6 +8,8 @@ setwd <- "~/Dropbox/UPLA/EXTENSION/CONSULTORIAS/AIRE/aire"
 #read database BIP
 BPI<- read.delim("~/Dropbox/UPLA/EXTENSION/CONSULTORIAS/AIRE/aire/DATA-BIP/BPI utf8.txt")
 color_plots <- "skyblue1"
+color_pesos <- "orange"
+BPI['Year'] <- BPI$Ano.Postulación
 ```
 
 Nombre, dimensiones y tipo de variables
@@ -23,14 +25,21 @@ str(BPI)
 
 
 ```{r, width=1200}
-ano_postulacion <- table(BPI$Ano.Postulación)
+
+aggdata <-aggregate(subset(BPI,select=c('Costo.Inicial', 'Year')), by=list(BPI$Year), FUN=sum, na.rm=TRUE)
+aggdata$Year<-NULL; names(aggdata) <- c('Year', 'Costo.Inicial') 
+barplot(aggdata$Costo.Inicial/1000, names.arg = aggdata$Year, main='Suma de Inversión Iicial', ylab = 'Miles de pesos', col= color_pesos)
+print(aggdata)
+
+ano_postulacion <- table(BPI$Year)
 barplot(ano_postulacion, col=color_plots, main='Cantidad de inversiones por año de postulación')
+
 provincia<-table(BPI$Provincia)
 barplot(provincia[order(provincia,decreasing=TRUE)], col=color_plots, main='Cantidad de inversiones por Provincia', las=2, cex.names=0.6)
 comuna <- table(BPI$Comuna)
 barplot(comuna[order(comuna, decreasing=TRUE)], col= color_plots, main='Cantidad de inversiones por Comuna', las=2, cex.names=0.6)
 fuente<- table(BPI$Fuente.Financiera)
-barplot(fuente[order(fuente,decreasing=TRUE)], col= color_plots, main='Cantidad de inversiones por Comuna',las=2, cex.names=0.5)
+barplot(fuente[order(fuente,decreasing=TRUE)], col= color_plots, main='Cantidad de inversiones por Fuente',las=2, cex.names=0.5)
 
 ```
 
