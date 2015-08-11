@@ -3,6 +3,7 @@ AIRE
 
 Análisis de la Inversión Regional en Educación 
 Region de Valparaiso.
+Desde que se inicio la jornada escolar completa.
 
 ##Descripción
 El objetivo de este proyecto es explorar los datos existentes sobre recursos monetarios invertidos
