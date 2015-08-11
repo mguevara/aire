@@ -1,7 +1,8 @@
-﻿aire
+AIRE
 ====
 
-Análisis de la Inversión Regional en Educación
+Análisis de la Inversión Regional en Educación 
+Region de Valparaiso.
 
 ##Descripción
 El objetivo de este proyecto es explorar los datos existentes sobre recursos monetarios invertidos
