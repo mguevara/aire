@@ -5,6 +5,9 @@ Análisis de la Inversión Regional en Educación
 Region de Valparaiso - Chile.
 Desde que se inicio la jornada escolar completa.
 
+## Requerimientos
+Aun no especificados.
+
 ##Descripción
 El objetivo de este proyecto es explorar los datos existentes sobre recursos monetarios invertidos
 
@@ -20,6 +23,7 @@ a hacer el respectivo análisis estadístico de las mismas.
 - [Banco Integrado de Proyectos](http://bip.ministeriodesarrollosocial.gob.cl/bip-trabajo/index.html)
 - [Ministerio de Educacion](http://www.mineduc.cl/)
 
-#testint kanbannerry
-dos
-tres
+
+
+
+
