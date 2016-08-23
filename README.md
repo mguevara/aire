@@ -1,8 +1,8 @@
-AIRE
+AIRE 2.0
 ====
 
 Análisis de la Inversión Regional en Educación 
-Region de Valparaiso.
+Region de Valparaiso - Chile.
 Desde que se inicio la jornada escolar completa.
 
 ##Descripción
