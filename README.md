@@ -5,7 +5,7 @@ Análisis de la Inversión Regional en Educación
 Region de Valparaiso - Chile.
 Desde que se inicio la jornada escolar completa.
 
-## Requerimientos
+## Requerimientos tecnicos
 Aun no especificados.
 
 ##Descripción
