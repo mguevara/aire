@@ -1,4 +1,4 @@
-AIRE 2.0
+AIRE 2.1
 ====
 
 Análisis de la Inversión Regional en Educación 
@@ -6,7 +6,7 @@ Region de Valparaiso - Chile.
 Desde que se inicio la jornada escolar completa.
 
 ## Requerimientos tecnicos
-Aun no especificados.
+Aun no especificados. Explorador web como Chrome y otros.
 
 ##Descripción
 El objetivo de este proyecto es explorar los datos existentes sobre recursos monetarios invertidos
